@@ -34,7 +34,6 @@ end
 alias __boss__pbStartOver pbStartOver unless defined?(__boss__pbStartOver)
 def pbStartOver(gameover = false)
   $game_switches[BossBattleConstants::BOSS_BATTLE_SWITCH] = false
-  $game_switches[NO_EXP_SWITCH] = false
   return __boss__pbStartOver(gameover)
 end
 
